@@ -27,6 +27,7 @@ let Main = (function () {
     console.log('build page called');
     let counter = 0;
     let injectHTML = '';
+    let injectHTMLFinal = '';
     productData.forEach(function (product, index) {
 
       if(index === 0) {
@@ -42,11 +43,12 @@ let Main = (function () {
 
 
       if(index === (productData.length-1)) {
-        pageContainer.innerHTML = injectHTML;
+        pageContainer.innerHTML = injectHTMLFinal;
       }
       //
       console.log(injectHTML);
-      injectHTML = '';
+      injectHTMLFinal = injectHTML;
+      // injectHTML = '';
     })
   };
 
