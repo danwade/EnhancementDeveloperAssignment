@@ -15,6 +15,8 @@ I believe I have all features and extras in place. The save products are shown o
 
 http://danwade.name/pb-assignment/
 
+One more thing, I compressed the css and js and placed internally in the index.html file on my web server but not in the project.
+
 Thanks again, looking forward to hearing feedback.
 
 
