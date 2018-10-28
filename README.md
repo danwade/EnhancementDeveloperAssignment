@@ -9,7 +9,7 @@ To run locally please run use web server and SASS. If you don't have handy you c
 
 `sass --watch sass/styles.scss:styles.css`
 
-`npm install http-server -g` with default settings.
+`npm install http-server -g` then in run command `http-server` which will run at http://127.0.0.1:8080
 
 I believe I have all features and extras in place. The save products are shown on same page using icon and colors. I have the application running on my personal site. You can find it here:
 
