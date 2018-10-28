@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Enhancement Developer Group Coding Assignment</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-
-<div class="page-container">
-
+<div class="overlay hidden">
+  <div class="modal-content">
+    <h3>Product <span id="modalMessage">Saved</span></h3>
+    <button>OK</button>
+  </div>
+</div>
+<nav>
+  <button id="localStorage">Using Local Storage</button>
+  <button id="sessionStorage">Using Session Storage</button>
+</nav>
+<div class="product-container">
+  <!-- injected content-->
 </div>
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,26 @@
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: block;
+  &.hidden {
+    display: none;
+  }
+}
+
+.modal-content {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 30px;
+  width: 40%;
+  border-radius: 3px;
+  margin: 10% auto 0;
+  background: #fff;
+  color: $potterybarnRed;
+}

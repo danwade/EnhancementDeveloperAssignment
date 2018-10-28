@@ -1,49 +1,70 @@
-
-
-.flex-grid {
-  display: flex;
-}
-.flex-grid .col {
-  flex: 1;
-}
-.flex-grid-thirds {
-  display: flex;
-  justify-content: space-between;
-}
-.flex-grid-thirds .col {
-  width: 32%;
+nav {
+  text-align: center;
+  margin-left: $gutterSize;
+  margin-right: $gutterSize;
+  margin-bottom: 0;
+  opacity: .3;
+  height: 50px;
+  transition: opacity .6s;
+  &:hover {
+    opacity: 1;
+  }
 }
 
-@media (max-width: 400px) {
-  .flex-grid,
-  .flex-grid-thirds {
-    display: block;
-    .col {
-      width: 100%;
-      margin: 0 0 10px 0;
+.product-container {
+  text-align: center;
+  overflow: auto;
+  margin-left: $gutterSize;
+  margin-top: 0;
+}
+
+.product {
+  &.saved {
+    p {
+      color: $potterybarnRed;
+    }
+
+    img {
+      outline: 1px solid $potterybarnRed;
+    }
+
+    .saved-icon {
+      display: block;
     }
   }
 }
 
-.flex-grid {
-  margin: 0 0 20px 0;
+div {
+  position: relative;
+  display: inline-block;
+  margin-right: $gutterSize;
+  margin-bottom: $gutterSize;
 }
-.col {
-  padding: 20px;
-  background: $product-background;
-  p {
-    color: $product-text-color;
+
+p {
+  text-align: left;
+  margin-top: 0;
+}
+
+img {
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  &:hover {
+    outline: 1px solid $potterybarnRed;
   }
 }
 
-@media (max-width: 400px) {
-  .flex-grid,
-  .flex-grid-thirds {
-    display: block;
-    .col {
-      width: 100%;
-      margin: 0 0 10px 0;
+@media (max-width: 500px) {
+  .product-container {
+    margin-left: $gutterSize+10;
+    .product {
+      width: 200px;
+      .saved-icon {
+        top: 13px;
+        right: 13px;
+        width: 28px;
+      }
     }
   }
 }
-
